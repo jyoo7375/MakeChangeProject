@@ -11,6 +11,8 @@
 
 ## Concepts Applied
 - Conditional Statements (if/else)
+- While loop
 
 ## Lessons Learned
 Declaration of a variable is important on where it goes.
+Taking your time is important and shouldn't be rushed.

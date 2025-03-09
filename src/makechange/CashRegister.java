@@ -30,33 +30,33 @@ public class CashRegister {
 			int twentyOwed = (int)(changeDue / 20);
 			changeDue -= twentyOwed * 20;
 			if(twentyOwed == 1) {
-				System.out.print(twentyOwed + " Twenty dollar ");
+				System.out.print("" + twentyOwed + " Twenty dollar ");
 			} else if(twentyOwed > 1) {
-				System.out.print(twentyOwed + " Twenty dollars ");
+				System.out.print("" + twentyOwed + " Twenty dollars ");
 			}
 			
 			int tensOwed = (int)(changeDue / 10);
 			changeDue -= tensOwed * 10;
 			if(tensOwed == 1) {
-				System.out.print(tensOwed + " Ten dollar ");
+				System.out.print("" + tensOwed + " Ten dollar ");
 			} else if(tensOwed > 1) {
-				System.out.print(tensOwed + " Ten dollars ");
+				System.out.print("" + tensOwed + " Ten dollars ");
 			}
 			
 			int fivesOwed = (int)(changeDue / 5);
 			changeDue -= fivesOwed * 5;
 			if(fivesOwed == 1) {
-				System.out.print(fivesOwed + " Five dollar ");
+				System.out.print("" + fivesOwed + " Five dollar ");
 			} else if(fivesOwed > 1) {
-				System.out.print(fivesOwed + " Five dollars ");
+				System.out.print("" + fivesOwed + " Five dollars ");
 			}
 			
 			int onesOwed = (int)(changeDue / 1);
 			changeDue -= onesOwed;
 			if(onesOwed == 1) {
-				System.out.print(onesOwed + " One dollar ");
+				System.out.print("" + onesOwed + " One dollar");
 			} else if(onesOwed > 1) {
-				System.out.print(onesOwed + " One dollars ");
+				System.out.print("" + onesOwed + " One dollars");
 			}
 			
 			changeDue = Math.round(changeDue * 100);
@@ -64,34 +64,36 @@ public class CashRegister {
 			int quarterOwed = (int)(changeDue / 25);
 			changeDue -= quarterOwed * 25;
 			if(quarterOwed == 1) {
-				System.out.print(quarterOwed + " Quarter ");
+				System.out.print(" " + quarterOwed + " Quarter");
 			} else if(quarterOwed > 1) {
-				System.out.print(quarterOwed + " Quarters ");
+				System.out.print(" " + quarterOwed + " Quarters");
 			}
 			
 			int dimeOwed = (int)(changeDue / 10);
 			changeDue -= dimeOwed * 10;
 			if(dimeOwed == 1) {
-				System.out.print(dimeOwed + " Dime ");
+				System.out.print(" " + dimeOwed + " Dime");
 			} else if(dimeOwed > 1) {
-				System.out.print(dimeOwed + " Dimes ");
+				System.out.print(" " + dimeOwed + " Dimes");
 			}
 			
 			int nickelOwed = (int)(changeDue / 5);
 			changeDue -= nickelOwed * 5;
 			if(nickelOwed == 1) {
-				System.out.print(nickelOwed + " Nickel ");
+				System.out.print(" " + nickelOwed + " Nickel");
 			} else if(nickelOwed > 1) {
-				System.out.print(nickelOwed + " Nickels ");
+				System.out.print(" " + nickelOwed + " Nickels");
 			}
 			
 			int pennyOwed = (int)(changeDue / 1);
 			changeDue -= pennyOwed;
 			if(pennyOwed == 1) {
-				System.out.print(pennyOwed + " Penny. ");
+				System.out.print(" " + pennyOwed + " Penny");
 			} else if(pennyOwed > 1) {
-				System.out.print(pennyOwed + " Pennies. ");
+				System.out.print(" " + pennyOwed + " Pennies");
 			}
+			
+			System.out.print(".");
 			
 		} else if(amountPaid == amountDue) {
 			System.out.println("Thank you for purchasing there will be no change.");
