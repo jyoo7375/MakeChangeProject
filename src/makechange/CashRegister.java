@@ -23,9 +23,11 @@ public class CashRegister {
 			amountPaid = sc.nextDouble();
 		}
 		
+		//Calculate the change due once right amount has been given.
 		if(amountPaid > amountDue) {
 			changeDue = amountPaid - amountDue;
 			
+			//Calculate the twenty dollar.
 			System.out.print("Your Change is: ");
 			int twentyOwed = (int)(changeDue / 20);
 			changeDue -= twentyOwed * 20;
@@ -35,6 +37,7 @@ public class CashRegister {
 				System.out.print("" + twentyOwed + " Twenty dollars ");
 			}
 			
+			//Calculate the ten dollar.
 			int tensOwed = (int)(changeDue / 10);
 			changeDue -= tensOwed * 10;
 			if(tensOwed == 1) {
@@ -43,6 +46,7 @@ public class CashRegister {
 				System.out.print("" + tensOwed + " Ten dollars ");
 			}
 			
+			//Calculate the five dollar.
 			int fivesOwed = (int)(changeDue / 5);
 			changeDue -= fivesOwed * 5;
 			if(fivesOwed == 1) {
@@ -51,6 +55,7 @@ public class CashRegister {
 				System.out.print("" + fivesOwed + " Five dollars ");
 			}
 			
+			//Calculate the one dollar.
 			int onesOwed = (int)(changeDue / 1);
 			changeDue -= onesOwed;
 			if(onesOwed == 1) {
@@ -61,6 +66,7 @@ public class CashRegister {
 			
 			changeDue = Math.round(changeDue * 100);
 			
+			//Calculate the quarter.
 			int quarterOwed = (int)(changeDue / 25);
 			changeDue -= quarterOwed * 25;
 			if(quarterOwed == 1) {
@@ -69,6 +75,7 @@ public class CashRegister {
 				System.out.print(" " + quarterOwed + " Quarters");
 			}
 			
+			//Calculate the dime.
 			int dimeOwed = (int)(changeDue / 10);
 			changeDue -= dimeOwed * 10;
 			if(dimeOwed == 1) {
@@ -77,6 +84,7 @@ public class CashRegister {
 				System.out.print(" " + dimeOwed + " Dimes");
 			}
 			
+			//Calculate the nickel.
 			int nickelOwed = (int)(changeDue / 5);
 			changeDue -= nickelOwed * 5;
 			if(nickelOwed == 1) {
@@ -85,6 +93,7 @@ public class CashRegister {
 				System.out.print(" " + nickelOwed + " Nickels");
 			}
 			
+			//Calculate the penny.
 			int pennyOwed = (int)(changeDue / 1);
 			changeDue -= pennyOwed;
 			if(pennyOwed == 1) {
@@ -93,8 +102,11 @@ public class CashRegister {
 				System.out.print(" " + pennyOwed + " Pennies");
 			}
 			
+			//add the period for the last 
 			System.out.print(".");
 			
+			
+			//if there are no change to be given exit the program.
 		} else if(amountPaid == amountDue) {
 			System.out.println("Thank you for purchasing there will be no change.");
 		}
