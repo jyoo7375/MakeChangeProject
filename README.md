@@ -13,3 +13,4 @@
 - Conditional Statements (if/else)
 
 ## Lessons Learned
+Declaration of a variable is important on where it goes.

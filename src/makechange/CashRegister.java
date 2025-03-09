@@ -19,7 +19,7 @@ public class CashRegister {
 		// Keep asking user until enough amount is given.
 		while(amountPaid < amountDue) {
 			System.out.println("That is not enough please check again!");
-			System.out.println("How much are you will you be paying?: ");
+			System.out.println("How much will you be paying?: ");
 			amountPaid = sc.nextDouble();
 		}
 		
