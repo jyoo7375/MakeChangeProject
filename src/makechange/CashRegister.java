@@ -28,7 +28,7 @@ public class CashRegister {
 			changeDue = amountPaid - amountDue;
 			
 			//Calculate the twenty dollar.
-			System.out.print("Your Change is: ");
+			System.out.print("Your Change is:");
 			int twentyOwed = (int)(changeDue / 20);
 			changeDue -= twentyOwed * 20;
 			if(twentyOwed == 1) {
